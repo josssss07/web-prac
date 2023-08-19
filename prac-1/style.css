@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    overflow-x:hidden ;
+    background-color: #36453B ;
+    color: #F4F9E9;  
+}
+
+
+img{
+    height: 40px;
+    align-items: center;
+    position: relative;
+    bottom: 14px;
+}
+.img-edits{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 350px; 
+    top: 160px;
+    scale: 1.8;
+}
+
+.box{
+    box-sizing: border-box;
+    border: black  ;
+    width: 101px;
+    height: 101px;
+    padding: 3px;
+}
+.starter-content{
+    display: block;
+    margin-left: 600px;
+    margin-top: 70px;
+}
+
+.name{
+    font-family: 'Ranade', sans-serif;
+    font-weight:80 ;
+    font-size: xx-large;
+    
+}
+
+.line {
+    height: 2px;
+    background: #E34A6F;
+    position: relative;;
+    align-items: center;
+    width: 800px;
+    position: relative;
+    left: 420px;
+}
+
+.container{
+    position: relative;
+    top: 7px;
+    margin: auto;
+    width: 50%;
+    font-family: 'Ranade', sans-serif;
+    font-weight:100 ;
+    
+}
+
+.nav-bar{
+    float: right;
+    height: 100%;
+}
+.bar{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: #D7CDCC;
+}
+
+.nav-bar a{
+
+	font-size: 17px;
+	font-weight: 700;
+	font-family: "Consolas" ;
+	padding-right:20px ;
+	padding-top: 30px;
+	display: inline-block;
+}
+
+
+.button{
+    background-color: #E34A6F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.con2{
+    display: flex;
+    position: relative;
+    left: 400px;
+    font-family: 'Ranade', sans-seri;   
+    margin: 100px; 
+}
+
+.button2{
+    background-color: #E34A6F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+.who-am-i{
+    position: relative;
+    top: 7px;
+    margin: auto;
+    width: 50%;
+    font-family: 'Ranade', sans-serif;
+    font-weight:100 ;
+}
+
+.swot{
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Ranade', sans-serif;
+}
+
+.sw-div{
+    display: flex;
+    margin: 0px 50px;
+    text-align: center;
+    font-family: 'Ranade', sans-serif;
+    font-weight: 100;
+
+}
+.ot-div{
+    display: flex;
+    margin:0px 50px ;
+    text-align: center;
+    font-family: 'Ranade', sans-serif;
+    font-weight: 100;
+}
+
+
+.e{
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+}
