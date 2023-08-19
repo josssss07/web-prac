@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Validations   </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="validation.js"></script>
+        <style>
+            #errorname, #errorpass, #erroruname, #errorcountry,#erroraddress, #errorcountry
+            {
+                color:red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body onload="document.getElementById('userid').focus();">
+        <form name="registration"></form>
+        <div class="container">
+            <!-- row 1 begins -->
+            <div class="row"> 
+                <div class="col-sm-3"> &nbsp;</div>
+
+                <div class="col-sm-3"> 
+                    <label for="userid">User id:</label>
+                </div>
+
+                <div class="col-sm-3"> 
+                    <input type="text" name="userid" size="12" id="userid" />
+                </div>
+
+                <div class="col-sm-3" id="errorname"> &nbsp;</div>
+            </div>
+            <!-- row 2 begins -->
+             
+             <div class="row"> 
+                <div class="col-sm-3"> &nbsp;</div>
+
+                <div class="col-sm-3"> 
+                    <label for="passid">Password:</label>
+                </div>
+
+                <div class="col-sm-3"> 
+                    <input type="password" name="passid"  id="passid" size="12" />
+                </div>
+
+                <div class="col-sm-3" id="errorpass"> &nbsp;</div>
+            </div>
+            <!-- row3 begins  -->
+             
+             <div class="row"> 
+                <div class="col-sm-3"> &nbsp;</div>
+
+                <div class="col-sm-3"> 
+                    <label for="username">Name:</label>
+                </div>
+
+                <div class="col-sm-3"> 
+                    <input type="text" name="username" id="username" size="20" />
+                </div>
+
+                <div class="col-sm-3" id="erroruname"> &nbsp;</div>
+            </div>
+            <!-- row4 begins  -->
+            <div class="row"> 
+                <div class="col-sm-3"> &nbsp;</div>
+
+                <div class="col-sm-3"> 
+                    <label for="address">Address:</label>
+                </div>
+
+                <div class="col-sm-3"> 
+                    <input type="text" name="address" id="address" size="50" /
+                </div>
+
+                <div class="col-sm-3" id="erroraddress"> &nbsp;</div>
+            </div>
+            <!-- row 5 begins -->
+            <div class="row"> 
+                <div class="col-sm-3"> &nbsp;</div>
+
+                <div class="col-sm-3"> 
+                    <label for="country">Country:</label>
+                </div>
+
+                <div class="col-sm-3"> 
+                    <select name="country" id="country">
+                        <option selected="" value="Default">(Please select a country)</option>
+                        <option value="AF">Australia</option>
+                        <option value="AL">Canada</option>
+                        <option value="DZ">India</option>
+                        <option value="AS">Russia</option>
+                        <option value="AD">USA</option>
+                        </select>
+                </div>
+
+                <div class="col-sm-3" id="errorcountry"> &nbsp;</div>
+            </div>
+           
+            <!-- row submit begins -->
+            <div class="row">
+                <div class="col-sm-3"> &nbsp; </div>
+                <div class="col-sm-6"> 
+                    <input type="button" name="submit" onclick="formValidation();" value="Submit" />
+                </div>
+                <div class="col-sm-3"> &nbsp; </div>
+            </div>
+        </div> <!-- container ends -->
+    </form>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

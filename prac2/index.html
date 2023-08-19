@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <style>
+        h1{
+            text-align: center;
+        }
+
+
+
+
+        body{
+            font-size:large;
+        }
+       
+        nav{
+            left: 0px;
+            right: 0px;
+            height: 50px;
+            width: 100%;
+            background-color: bisque;
+            text-align: end;
+           
+        }
+    </style>
+   
+    <title>FYIT Application form</title>
+</head>
+
+
+
+
+<body>
+    <div class="head">
+        <h1>APPLICATION FORM FOR FYIT</h1><br>
+    </div>  
+    <div class="navbar">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Apply</a>
+            <a href="#">About</a>
+        </nav>
+    </div>
+    <div class="form-full-body">
+        <form method="post">
+            <div class="fname">
+                Enter first Name:
+                <input type="text" id="fname" placeholder="enter first name" aria-label="enter first name"><br><br>
+            </div>
+            <div class="lname">
+                Enter Last Name:
+                <input type="text" id="lname" placeholder="enter last name" aria-label="enter last name"><br><br>
+            </div>
+            <div class="dob">
+                Enter Date of Birth:
+                <input type="date" id="udob" placeholder="enter dob" aria-label="enter date of birth"><br><br>
+            </div>
+            <div class="age">
+                Enter age:
+                <input type="number" id="uage" placeholder="enter age" aria-label="enter age"><br><br>
+            </div>
+            <div class="phone-number">
+                Enter phone number:
+                <input type="text" id="unum" maxlength="14" placeholder="enter last name" aria-label="enter phone number"><br><br>
+            </div>
+            <div class="email">
+                Enter Email Id:
+                <input type="text" id="uemail" placeholder="enter last name" aria-label="enter email id"><br><br>
+            </div>
+            <div class="address">
+                Enter Address:
+                <textarea>enter here</textarea>
+            </div>
+        </form>
+    <div class="form"></div>
+        <br><br>
+        <div class="acamedic-details">
+            <div class="twelveth-percent">    
+                <label>Class 12th percentage:</label>
+                <input type="text" id="hsp" placeholder="enter percentage"><br><br>
+            </div>
+            <div class="twelve-maths">
+                <label>Marks in 12th in Maths:</label>
+                <input type="text" id="hsm" placeholder="enter marks"><br><br>
+            </div>
+            <div class="tenthpercent">
+                <label>Class 10th percentage:</label>
+                <input type="text" id="ssp" placeholder="enter percentage"><br><br>    
+            </div>
+            <div class="marksheets">
+                <label>Marks in 10th in Maths:</label>
+                <input type="text" id="ssm"  placeholder="enter marks"><br><br>
+                <label>Add your 12th marksheet:</label>
+                <input type="file" placeholder="upload">
+                <br><br>
+                <input type="submit" value="send" id="mybtn">    
+            </div>
+        </div>
+    </form>
+
+
+    </div>
+        </body>
+</html>
+
+
