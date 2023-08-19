@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#loginform").submit(function(event)){
+    $("#loginform").submit(function(event){
         var username = $("#username").val();
         var password = $("#password").val();
         var valid = true;
@@ -16,6 +16,14 @@ $(document).ready(function(){
 
         if(password === ""){
             $("#passwordError").text("Password is required.");
+            valid = false;
+
         }
-    }
-})
+
+        //prevent submission if validation failed
+
+        if(!valid){
+            event.preventDefault();
+        }
+    });
+});
