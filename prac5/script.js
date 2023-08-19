@@ -19,11 +19,5 @@ $(document).ready(function(){
             valid = false;
 
         }
-
-        //prevent submission if validation failed
-
-        if(!valid){
-            event.preventDefault();
-        }
-    });
+});
 });
