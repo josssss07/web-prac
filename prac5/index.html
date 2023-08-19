@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form id="loginForm" action="login.php" method="post">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <span class="error" id="usernameError"></span>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <span class="error" id="passwordError"></span>
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</body>
+</html>
