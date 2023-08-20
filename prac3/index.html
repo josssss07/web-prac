@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Validations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="validation.js"></script>
+
+</head>
+
+<!--Onload is a js event, reg is the name of the form,.focus() places a cursor inside the textbox-->
+
+<body onload="document.registration.userid.focus();"> 
+    <form name="registeration" onSubmit="return formValidation()">
+        <div class="container">
+            <!--Row 1 begins -->
+
+            <div class="row">
+                <div class="col-sm-3">&nbsp;</div>
+    
+                <div class="col-sm-3">
+                    <label for="userid">User id:</label>
+                </div>
+                <div class="col-sm-3">
+                   <input type="text" name="userid"  id="userid"  name="userid" size="12" />
+                </div>
+    
+                <div class="col-sm-3" id="erroruname">&nbsp;</div>
+    
+            </div>
+            <!--Row 2 begins -->
+
+            <div class="row">
+                <div class="col-sm-3">&nbsp;</div>
+    
+                <div class="col-sm-3">
+                    <label for="passid">Password:</label>
+                </div>
+                <div class="col-sm-3">
+                   <input type="password" name="passid" id="passid" size="12" />
+                </div>
+    
+                <div class="col-sm-3">&nbsp;</div>
+    
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">&nbsp;</div>
+    
+                <div class="col-sm-3">
+                    <label for="uname">Username:</label>
+                </div>
+                <div class="col-sm-3">
+                   <input type="text" name="uname" id="uname" size="12" />
+                </div>
+    
+                <div class="col-sm-3" id="errorname">&nbsp;</div>
+    
+            </div>
+            <!--Row 3 begins -->
+
+            <div class="row">
+                <div class="col-sm-3">&nbsp;</div>
+                <div class="col-sm-6">
+                    <input type="button" name="submit" onclick="formValidation();" value="submit"> 
+                </div>
+                <div class="col-sm-3">&nbsp;</div>
+            </div>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
