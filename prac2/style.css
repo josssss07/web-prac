@@ -1,0 +1,36 @@
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    z-index: 999;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    z-index: 999;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    background-color: gainsboro;
+    z-index: 999;
+  }
+
+/*
+  :root{
+    --primary:;
+    --light:;
+    --dark:;
+  }
+  */
+
+  
+  body{
+    margin: 0;
+    padding: 0;
+
+  }
+
+

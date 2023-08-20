@@ -1,0 +1,11 @@
+.myborder{
+    border: 2px solid rgb(197, 197, 226);
+}
+
+body{
+    background-color:rgb(16, 19, 29);
+    color:rgb(197, 197, 226)
+}
+input[type="number"] {
+    width: 100px;
+}
