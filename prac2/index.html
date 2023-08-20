@@ -7,7 +7,57 @@
     <title>Student Dashbaord</title>
 </head>
 <body>
-    
+    <div class="fullwrapper">
+        <div class="container">
+            <div class="what-page">
+                <h1>Student Dashbaord</h1>
+            </div>
+            <div class="card-attendance">
+                <h2>Attendance</h2>
+                <h3>Number of lectures attended:</h3>
+                <label for="lectures-attended">
+                    <input type="number" size="3" name="attendedlecs" id="attended-lecs">
+                </label>
+                <h3><br>Out of: </h3>
+                <label for="total-lectures">
+                    <input type="number" name="total-lecs" id="total-lecs">
+                </label>
+                <button type="button" id="submit">Submit</button>
+                <div class="attendance-percentage">
+                    <h3 id="attendance-percentage"></h3>
+                </div>
+
+            </div>
+
+
+            <div class="card-gpa">
+                <h2>GPA-calculator</h2>
+                <div class="gpa">
+                    <div class="sem1">
+                        <h3>Enter Sem1 Gpa</h3>
+                        <label for="sem1">
+                            <input type="number" name="sem1" id="sem1-gpa" max="10" size="5">
+                        </label>
+                        <h3><br>Enter sem2 Gpa</h3>
+                        <label for="sem2">
+                            <input type="number" name="sem2" id="sem2-gpa" max="10" size="5">
+                        </label>
+                        <div class="caclculate">
+                            <button id="calculate">Calcuate</button>
+                        </div>
+                        <div class="cgpa">
+                            <h3 id="cgpa"></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
 
