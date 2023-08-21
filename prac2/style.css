@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden ;
+    animation:fadeInAnimation ease 3s ;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: var(--backcolor);
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+:root{
+    --light: #ededed;
+    --dark: #1f1f1f; 
+    --backcolor: #8e9aaf;
+}
+.container{
+    justify-content: center;
+    display: block;
+    position: relative;
+    grid-area: auto;
+}
+.card-attendance{
+    width: 270px;
+    height: auto;
+    border-radius:15px ;
+    background: #dee2ff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Author', sans-serif;
+    -moz-box-align: center;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-gpa{
+    width: 270px;
+    height: auto;
+    border-radius:15px ;
+    background: #dee2ff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Author', sans-serif;
+    -moz-box-align: center;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.card-ecc{
+    width: 270px;
+    height: auto;
+    border-radius:15px ;
+    background: #dee2ff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Author', sans-serif;
+    -moz-box-align: center;
+    float: left;
+    padding: 0 10px;
+    width: 20%;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-page{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .card-ecc {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  
+@media screen and (max-width: 600px) {
+    .card-attendance {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  
+@media screen and (max-width: 600px) {
+    .card-attendance {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

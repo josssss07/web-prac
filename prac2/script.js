@@ -21,11 +21,11 @@ document.getElementById('calculate').onclick = function(){
     document.getElementById('cgpa').innerText = " Current CPGA is: " + cgpa;
 }
 
-document.getElementById('point-check').onclick = function(){
+document.getElementById('point-check').onclick = function() {
     let points = 20;
-    let points_gained = parseInt(doc.getElementById('ecc-points').value);
+    let points_gained = parseInt(document.getElementById('ecc-points').value);
 
     let points_left = points - points_gained;
 
     document.getElementById('ecc-op').innerHTML = 'Points left to collect = ' + points_left;
-}
+};
