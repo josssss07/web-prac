@@ -1,72 +1,74 @@
-function formValidation()
-{
-    flag=true;
-    var uid = document.getElementById('userid');
-    //alert("uid value"+uid.value);
-    var passid = document.getElementById('passid');
-    var uname = document.getElementById('uname');
 
-    if(userid_validation(uid,5,12))
-    {
-        flag=true;
-    }
-    else
-        flag=false;
+$(document).ready(function () {
+    console.log("Document ready"); // Check if this is logged
 
+    $("#btnCalc").click(function () {
+        console.log("Calculate button clicked"); // Check if this is logged
 
-    if(passid_validation(passid,7,12))
-    {
-        flag=true;
-    }
-    else
-        flag=false;
+        // Calculate the unit cost based on coffee type
+        var unitCost = 0.0;
 
-    
-    if(allAlpha(uname))
-    {
-        alert("validated");
+        {if ($("#optRegular").prop("checked")) {
+            unitCost = 15.5;
+        } else if ($("#optFilter").prop("checked")) {
+            unitCost = 20.5;
+        } else if ($("#optCappuccino").prop("checked")) {
+            unitCost = 25;
+        } else if ($("#optLatte").prop("checked")) {
+            unitCost = 30;
+        } 
     }
-    return false;
-}
-function userid_validation(uid,m_min,m_max)
-{
-    var uid_len = uid.value.length;
-    alert("length = "+uid_len);
-    if (uid_len == 0 || uid_len >= m_max || uid_len < m_min)
-    {
-        //alert("user id shouldnt be empty/ length be betweeen"+m_min+"to"+m_max);
-        document.getElementById('erroruname').innerHTML="this is an invalid uid";
-        uid.focus();
-        return false;
-    }
+        // ... Add more coffee types here ...
 
-    return true;
-}
+        console.log("Unit cost: " + unitCost); // Check the value of unitCost
 
-function passid_validation(passid,mx,my)
-{
-    var passid_len = passid.value.length;
-    //alert("length = "+uid_len);
-    if (passid_len == 0 || passid_len >= my || passid_len < mx)
-    {
-        alert("password shouldnt be empty/ length be betweeen"+mx+"to"+my)
-        passid.focus();
-        return false;
-    }
+        // Get the user's input
+        var amount = parseFloat($('#txtQuant').val());
+        if (isNaN(amount)) {
+            amount = 0;
+        }
+        var selectedSize = $("#coffeeSize").val();
+        var selectedFlavor = $("#coffeeFlavor").val();
 
-    return true;
-} 
-function allAlpha(uname)
-{
-    var letters = /^[A-Za-z]+$/;
-    if(uname.value.match(letters))
-    {
-        return true;
-    }
-    else{
-        //alert("username must have alphabet characters only");
-        document.getElementById('errorname').innerHTML="this is invalid username";
-        uname.focus();
-        return false;
-    }
-}
+        console.log("Amount: " + amount); // Check the value of amount
+        console.log("Selected size: " + selectedSize); // Check the value of selectedSize
+        console.log("Selected flavor: " + selectedFlavor); // Check the value of selectedFlavor
+
+        // Calculate size and flavor multipliers
+        var sizeMultiplier = 1.0;
+        var flavorMultiplier = 1.0;
+
+        if (selectedSize === "medium") {
+            sizeMultiplier = 1.2;
+        } else if (selectedSize === "large") {
+            sizeMultiplier = 1.5;
+        }
+
+        if (selectedFlavor === "vanilla") {
+            flavorMultiplier = 1.2;
+        } else if (selectedFlavor === "chocolate") {
+            flavorMultiplier = 1.3;
+        } else if (selectedFlavor === "caramel") {
+            flavorMultiplier = 1.4;
+        }
+
+        console.log("Size multiplier: " + sizeMultiplier); // Check the value of sizeMultiplier
+        console.log("Flavor multiplier: " + flavorMultiplier); // Check the value of flavorMultiplier
+
+        // Calculate the total price
+        var pprice=unitCost * sizeMultiplier * flavorMultiplier;
+        var total = amount * unitCost * sizeMultiplier * flavorMultiplier;
+        total = total.toFixed(2);
+
+        console.log("Total: " + total); // Check the value of total
+        $('#txtPrice').val(pprice);
+        // Update the total field
+        $('#txtTotal').val(total);
+    });
+
+    // Code for displaying the cookie
+    $("#freebie").click(function () {
+        console.log("Freebie clicked"); // Check if this is logged
+        $("#cookie").slideToggle("slow");
+    });
+});

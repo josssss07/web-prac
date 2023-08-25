@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Validations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet"> <!-- Link to the external CSS file -->
-    <script src="script.js"></script>
-</head>
-<body onload="document.getElementById('userid').focus();">
-    <form name="registration">
+    <head>
+        <title> Validations   </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="validation.js"></script>
+        <style>
+            #errorname, #errorpass, #erroruname, #errorcountry,#erroraddress, #errorcountry
+            {
+                color:red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+
+    DOWNLOAD XAAMP FOR BACKEND 
+    port clash may be an issue 
+    keep changing ports 
+    
+
+    <body onload="document.getElementById('userid').focus();">
+        <form name="registration"></form>
         <div class="container">
             <!-- row 1 begins -->
             <div class="row"> 
@@ -63,7 +76,7 @@
                 </div>
 
                 <div class="col-sm-3"> 
-                    <input type="text" name="address" id="address" size="50" /
+                    <input type="text" name="address" id="address" size="50">
                 </div>
 
                 <div class="col-sm-3" id="erroraddress"> &nbsp;</div>
@@ -98,8 +111,9 @@
                 </div>
                 <div class="col-sm-3"> &nbsp; </div>
             </div>
-        </div> <!-- container ends --> 
+        </div> <!-- container ends -->
     </form>
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

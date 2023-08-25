@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+#banner {
+    text-align: center;
+    font-size: 36px;
+    color: #795548; /* Brownish */
+    margin-bottom: 20px;
+}
+
+/* Marquee Styles */
+#marquee {
+    background-color: #7ac68e; /* Amber */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Freebie Styles */
+#freebie {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #e64a19; /* Deep Orange */
+}
+
+#cookie {
+    display: none;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Button Styles */
+#btnCalc {
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnCalc:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+/* Select Styles */
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* SEO Styles */
+h3 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #795548; /* Brownish */
+}
+
+/* Font Awesome Icons Styles */
+.fa-coffee-bean,
+.fa-coffee,
+.fa-heart,
+.fa-cookie {
+    font-size: 48px;
+    color: #6d4c41; /* Darker Brownish */
+}

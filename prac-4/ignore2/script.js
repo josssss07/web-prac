@@ -1,4 +1,3 @@
-
 function formValidation()
 {
     
@@ -80,7 +79,7 @@ function allAlpha(uname)
 //user address
 function alphanumeric(uadd)
 { 
-    var letters = /^[0-9a-zA-Z]+$/;
+    var letters = /^[0-9a-zA-Z\s,]+$/;
     
     if(uadd.value.match(letters))
     {

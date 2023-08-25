@@ -1,0 +1,11 @@
+
+/* External CSS styles for the form */
+#errorname,
+#errorpass,
+#erroruname,
+#errorcountry,
+#erroraddress,
+#errorcountry {
+    color: red;
+    font-style: italic;
+}
