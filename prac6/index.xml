@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE netflix [
+    <!ELEMENT netflix (movies, tv_shows)>
+    <!ELEMENT movies (action_movies)>
+    <!ELEMENT action_movies (movie_details+)>
+    <!ELEMENT movie_details (name, release_date, director, synopsis)>
+    <!ELEMENT tv_shows (show_description+)>
+    <!ELEMENT show_description (show_name, show_release, show_synopsis)>
+]>
+    <netflix>
+    <movies>
+        <action_movies>
+            <movie_details>
+                <name>Mad Max: Fury Road</name>
+                <release_date>May 15, 2015</release_date>
+                <director>George Miller</director>
+                <synopsis>In a desert wasteland, a woman rebels against a tyrant and joins a group on a high-octane escape across a post-apocalyptic landscape.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>Die Hard</name>
+                <release_date>July 15, 1988</release_date>
+                <director>John McTiernan</director>
+                <synopsis>A cop's plan to reconcile with his wife is derailed when he must save hostages from a group of terrorists in a Los Angeles skyscraper.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>John Wick</name>
+                <release_date>October 24, 2014</release_date>
+                <director>Chad Stahelski (co-directed by David Leitch, uncredited)</director>
+                <synopsis>A retired hitman seeks vengeance against those who wronged him, unleashing his lethal skills in a world of underground assassins.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>The Dark Knight</name>
+                <release_date>July 18, 2008</release_date>
+                <director>Christopher Nolan</director>
+                <synopsis>Batman faces off against the chaotic Joker, testing his morality and pushing Gotham City to its limits.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>The Matrix</name>
+                <release_date>March 31, 1999</release_date>
+                <director>The Wachowskis (Lana Wachowski and Lilly Wachowski)</director>
+                <synopsis>A hacker discovers the truth about reality and joins rebels to battle machines in a simulated world.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>Inception</name>
+                <release_date>July 16, 2010</release_date>
+                <director>Christopher Nolan</director>
+                <synopsis>Skilled thieves enter dreams to steal information, but the line between reality and dreams blurs when they attempt an inception—planting an idea.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>Avengers: Endgame</name>
+                <release_date>April 26, 2019</release_date>
+                <director>Anthony Russo and Joe Russo (The Russo Brothers)</director>
+                <synopsis>Earth's mightiest heroes embark on a mission through time to reverse the devastating effects of a universe-altering snap.</synopsis>
+            </movie_details>
+            
+            <movie_details> 
+                <name>Fast and the Furious</name>
+                <release_date>April 3, 2009</release_date>
+                <director>Justin Lin</director>
+                <synopsis>A group of skilled drivers turned thieves team up to take down a dangerous drug lord.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>Mission: Impossible - Fallout</name>
+                <release_date>July 27, 2018</release_date>
+                <director>Christopher McQuarrie</director>
+                <synopsis>Ethan Hunt races against time to prevent a global catastrophe as he faces a highly-skilled enemy and his own past mistakes.</synopsis>
+            </movie_details>
+            
+            <movie_details>
+                <name>Gladiator</name>
+                <release_date>May 5, 2000</release_date>
+                <director>Ridley Scott</director>
+                <synopsis>A former Roman general becomes a gladiator, seeking revenge against the corrupt emperor who murdered his family and betrayed him.</synopsis>
+            </movie_details>
+        </action_movies>
+    </movies>
+
+    <tv-shows>
+        <tv_shows>
+    <show_description>
+        <show_name>Brooklyn Nine-Nine</show_name>
+        <show_release>September 17, 2013</show_release>
+        <show_synopsis>A lighthearted comedy that follows the detectives of the 99th precinct of the New York City Police Department as they solve crimes and navigate their personal lives.</show_synopsis>
+    </show_description>
+    
+    <show_description>
+        <show_name>Game of Thrones</show_name>
+        <show_release>April 17, 2011</show_release>
+        <show_synopsis>In the fictional continents of Westeros and Essos, noble families vie for control of the Iron Throne while an ancient threat looms beyond the Wall in the North.</show_synopsis>
+    </show_description>
+    
+    <show_description>
+        <show_name>The Office</show_name>
+        <show_release>March 24, 2005</show_release>
+        <show_synopsis>A mockumentary-style comedy that follows the daily lives of office employees working at the Scranton, Pennsylvania branch of the Dunder Mifflin paper company.</show_synopsis>
+    </show_description>
+    
+    <show_description>
+        <show_name>Rick and Morty</show_name>
+        <show_release>December 2, 2013</show_release>
+        <show_synopsis>A brilliant but unstable scientist and his not-so-bright grandson embark on dangerous and surreal adventures across the cosmos.</show_synopsis>
+    </show_description>
+    
+    <show_description>
+        <show_name>Breaking Bad</show_name>
+        <show_release>January 20, 2008</show_release>
+        <show_synopsis>A high school chemistry teacher turned methamphetamine manufacturer teams up with a former student to create and sell blue meth, leading them into the criminal underworld.</show_synopsis>
+    </show_description>
+</tv_shows>
+
+    </tv-shows>
+</netflix>
