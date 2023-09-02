@@ -30,6 +30,8 @@
 
     if(mysqli_query($conn, $sql)){
         echo"Data Inserted Successfully";
+        header("Location: display.php");
+        exit;
     }
     else{
         echo"Data Insertion Failed";
